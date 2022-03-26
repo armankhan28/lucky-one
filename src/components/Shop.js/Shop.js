@@ -13,8 +13,16 @@ const Shop = () => {
 
     const handleAddToClick = (selectedProduct) => {
         const newCart = [...cart, selectedProduct]
-        setCart(newCart);
-      
+        setCart(newCart);   
+    }
+    const randomItem = () => {
+        let randomValue = 0;
+        if(cart.length !== 0){
+            randomValue = cart[Math.floor(Math.random() * cart.length)].name;
+           console.log(randomValue)
+        }
+        
+        
     }
     return (
         <div className='shop'>
@@ -34,7 +42,9 @@ const Shop = () => {
             >
             </Cart>
         )}
-         <h4>Choice for me</h4>
+        <button className='' onClick={randomItem}>
+        <h4>Choice for me</h4>
+        </button>
             </div>
         </div>
     );
