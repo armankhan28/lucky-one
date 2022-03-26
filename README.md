@@ -1,4 +1,4 @@
-<h1>Cap Market</h1>
+<h1>Watch Market</h1>
 
 <h3>Repo Link</h3>
 Our Live-site: (https://jazzy-yeot-c8baa2.netlify.app/)
