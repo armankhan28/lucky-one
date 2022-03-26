@@ -45,7 +45,7 @@ const Shop = () => {
             >
             </Cart>
         )}
-        <button className='' onClick={randomItem}>
+        <button className='btn' onClick={randomItem}>
         <h4>Choice for me</h4>
         </button> <br />
         <button onClick={remove}>

@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
     return (
         <div>
-            <h1>Welcome To My Cap Market</h1>
+            <h1>Welcome To My Watch Market</h1>
         </div>
     );
 };

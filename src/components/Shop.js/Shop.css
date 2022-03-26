@@ -17,6 +17,9 @@
     height:40px;
     border-radius: 50%;
 }
+.btn{
+    margin-bottom: 20px;
+}
 @media screen and (max-width:1300px){
     .products{
         grid-template-columns: repeat(3, 1fr);
