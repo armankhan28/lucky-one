@@ -15,14 +15,17 @@ const Shop = () => {
         const newCart = [...cart, selectedProduct]
         setCart(newCart);   
     }
+   //Random item
     const randomItem = () => {
-        let randomValue = 0;
-        if(cart.length !== 0){
-            randomValue = cart[Math.floor(Math.random() * cart.length)].name;
-           console.log(randomValue)
+        if (cart.length > 0  ){
+            const randomValue = Math.floor(Math.random() * cart.length);
+            const luckyNumber = cart[randomValue];
+            setCart([luckyNumber]);
         }
-        
-        
+    }
+  //Remove item    
+    const remove = () =>{
+        setCart ([]);
     }
     return (
         <div className='shop'>
@@ -44,6 +47,9 @@ const Shop = () => {
         )}
         <button className='' onClick={randomItem}>
         <h4>Choice for me</h4>
+        </button> <br />
+        <button onClick={remove}>
+            <p>Remove</p>
         </button>
             </div>
         </div>
